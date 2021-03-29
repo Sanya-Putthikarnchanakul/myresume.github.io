@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+
+#header::-webkit-scrollbar {
+  display: none;
 }
 
 #header .profile img {
@@ -230,6 +236,19 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  margin-left: 320px;
+}
+
+@media only screen and (max-width: 1190px) {
+  #hero .hero-container {
+    margin-left: 0;
+  }
+
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #hero h1 {
